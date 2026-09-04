@@ -1,0 +1,49 @@
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    background-color: #f7f4ed;
+    color: #222;
+}
+
+header {
+    padding: 40px;
+    text-align: center;
+    background-color: #263238;
+    color: white;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+p {
+    margin-bottom: 25px;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+
+p::first-letter {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+
+p::first-line {
+    font-weight: bold;
+}
+
+mark {
+    background-color: #ffd54f;
+    padding: 3px;
+}
+
+blockquote {
+    margin: 35px 0;
+    padding: 25px;
+    border-left: 6px solid #3949ab;
+    background-color: #e8eaf6;
+    font-style: italic;
+}
