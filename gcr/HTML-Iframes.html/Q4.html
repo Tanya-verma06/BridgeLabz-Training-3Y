@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<frameset rows="30%,70%">
+
+    <!-- Top Frame: Navigation -->
+    <frame
+        src="data:text/html,
+        <html>
+        <body>
+        <h2>Navigation</h2>
+        <a href='data:text/html,<h1>Home</h1>' target='bottomFrame'>Home</a> |
+        <a href='data:text/html,<h1>About Us</h1><p>This is the About page.</p>' target='bottomFrame'>About</a> |
+        <a href='data:text/html,<h1>Contact</h1><p>Email: example@gmail.com</p>' target='bottomFrame'>Contact</a>
+        </body>
+        </html>"
+        title="Navigation">
+
+    <!-- Bottom Frame: Welcome Message -->
+    <frame
+        name="bottomFrame"
+        src="data:text/html,
+        <html>
+        <body>
+        <h1>Welcome to My Website</h1>
+        </body>
+        </html>"
+        title="Welcome Message">
+
+</frameset>
+
+</html>
