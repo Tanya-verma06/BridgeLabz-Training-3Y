@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Background</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+            text-align: center;
+            z-index: 10;
+        }
+
+        main {
+            padding-top: 80px;
+            padding-bottom: 70px;
+        }
+
+        section {
+            min-height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .linear {
+            background: linear-gradient(120deg, #4facfe, #00f2fe);
+        }
+
+        .radial {
+            background: radial-gradient(circle, #ff9966, #ff5e62);
+            background-attachment: fixed;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 15px;
+            background-color: #222;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Gradient Background Page</h1>
+    </header>
+
+    <main>
+
+        <section class="linear">
+            <div>
+                <h2>Linear Gradient</h2>
+                <p>This section uses a linear gradient background.</p>
+            </div>
+        </section>
+
+        <section class="radial">
+            <div>
+                <h2>Radial Gradient</h2>
+                <p>This section uses a radial gradient background.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gradient Page</p>
+    </footer>
+
+</body>
+</html>

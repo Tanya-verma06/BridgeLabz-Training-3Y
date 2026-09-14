@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Selectors</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            line-height: 1.6;
+        }
+
+        input[type="text"] {
+            border: 2px solid blue;
+            padding: 10px;
+        }
+
+        a[href^="https"] {
+            color: green;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        input:focus {
+            background-color: #eeeeee;
+        }
+
+        li:nth-child(odd) {
+            background-color: #eeeeee;
+        }
+
+        .parent > p {
+            color: blue;
+        }
+
+        h2 + p {
+            font-weight: bold;
+        }
+
+        h2 ~ p {
+            margin-left: 20px;
+        }
+
+        .box p {
+            color: purple;
+        }
+
+        h1::before {
+            content: "★ ";
+        }
+
+        h1::after {
+            content: " ★";
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Advanced CSS Selectors</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Attribute Selectors</h2>
+
+            <input type="text" placeholder="Enter your name">
+
+            <br><br>
+
+            <a href="https://www.google.com">HTTPS Link</a>
+        </section>
+
+        <section>
+            <h2>List with nth-child()</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+                <li>GitHub</li>
+            </ul>
+        </section>
+
+        <section class="parent box">
+            <h2>Combinators</h2>
+            <p>Direct child paragraph.</p>
+
+            <div>
+                <p>Descendant paragraph.</p>
+            </div>
+
+            <p>Sibling paragraph.</p>
+        </section>
+
+    </main>
+
+</body>
+</html>

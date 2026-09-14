@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Exploration</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #eeeeee;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .default-box {
+            width: 250px;
+            padding: 30px;
+            border: 10px solid black;
+            margin: 30px;
+            background-color: lightblue;
+        }
+
+        .border-box {
+            width: 250px;
+            height: 250px;
+            padding: 30px;
+            border: 10px solid black;
+            box-sizing: border-box;
+            background-color: lightgreen;
+        }
+
+        .layer {
+            padding: 20px;
+            border: 5px solid red;
+            margin: 20px;
+            outline: 3px dashed blue;
+        }
+
+        h2 {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section>
+            <h1>Default Box Model</h1>
+
+            <div class="default-box">
+                <h2>Content</h2>
+                <p>Blue area represents content.</p>
+                <p>Padding is inside the border.</p>
+                <p>Margin is outside the border.</p>
+            </div>
+        </section>
+
+        <section>
+            <h1>Border Box</h1>
+
+            <div class="border-box">
+                <h2>Content</h2>
+                <p>box-sizing: border-box</p>
+                <p>Width includes padding and border.</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography and Text Styling</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        article {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 35px;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .normal {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.8;
+            letter-spacing: 1px;
+            text-align: justify;
+        }
+
+        .special {
+            font-family: Georgia, serif;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1.7;
+        }
+
+        mark {
+            background-color: yellow;
+        }
+
+        strong {
+            color: blue;
+        }
+
+        em {
+            color: purple;
+        }
+
+        .normal::first-letter {
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        .special::first-line {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Typography and Text Styling</h1>
+    </header>
+
+    <main>
+
+        <article>
+
+            <p class="normal">
+                Web development is an important skill in today's digital world.
+                HTML creates the structure of a webpage and CSS makes the webpage
+                attractive and readable. Good typography improves the overall
+                user experience.
+            </p>
+
+            <p class="special">
+                Learning CSS helps developers create clean and responsive
+                websites with proper spacing, alignment and visual hierarchy.
+            </p>
+
+            <p>
+                CSS can highlight <mark>important information</mark>,
+                make text <strong>strong and bold</strong>, and show
+                <em>emphasized content</em>.
+            </p>
+
+        </article>
+
+    </main>
+
+</body>
+</html>

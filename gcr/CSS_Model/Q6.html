@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transformations</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #eeeeee;
+        }
+
+        .container {
+            min-height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            width: 150px;
+        }
+
+        .box {
+            height: 150px;
+            background-color: lightblue;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.4s ease;
+        }
+
+        .rotate:hover {
+            transform: rotate(20deg);
+        }
+
+        .scale:hover {
+            transform: scale(1.2);
+        }
+
+        .translate:hover {
+            transform: translateY(-20px);
+        }
+
+        .skew:hover {
+            transform: skew(15deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CSS Transformations Showcase</h1>
+    </header>
+
+    <main class="container">
+
+        <section class="item">
+            <div class="box rotate">Rotate</div>
+            <p>rotate()</p>
+        </section>
+
+        <section class="item">
+            <div class="box scale">Scale</div>
+            <p>scale()</p>
+        </section>
+
+        <section class="item">
+            <div class="box translate">Translate</div>
+            <p>translate()</p>
+        </section>
+
+        <section class="item">
+            <div class="box skew">Skew</div>
+            <p>skew()</p>
+        </section>
+
+    </main>
+
+</body>
+</html>
