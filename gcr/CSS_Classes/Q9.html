@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Effects</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #eeeeee;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 30px;
+            width: 90%;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 200px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px gray;
+            transition: all 0.4s ease;
+        }
+
+        .card button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px gray;
+        }
+
+        .card button:hover {
+            transform: scale(1.1);
+            background-color: green;
+        }
+
+        .card button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="card">
+            <h2>Example 1</h2>
+            <p>Hover over the button.</p>
+            <button>Click Me</button>
+        </section>
+
+        <section class="card">
+            <h2>Example 2</h2>
+            <p>Button grows on hover.</p>
+            <button>Explore</button>
+        </section>
+
+        <section class="card">
+            <h2>Example 3</h2>
+            <p>Transitions create smooth effects.</p>
+            <button>Learn More</button>
+        </section>
+
+    </main>
+
+</body>
+</html>

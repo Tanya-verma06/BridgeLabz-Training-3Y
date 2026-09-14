@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .example {
+            width: 220px;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px gray;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        button:focus {
+            outline: 3px solid orange;
+        }
+
+        button:active {
+            background-color: green;
+            color: white;
+        }
+
+        li:nth-child(odd) {
+            background-color: lightblue;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CSS Pseudo-Classes</h1>
+    </header>
+
+    <main class="container">
+
+        <section class="example">
+            <h2>:hover</h2>
+            <a href="#">Hover Over Me</a>
+            <p>Changes when the mouse moves over the element.</p>
+        </section>
+
+        <section class="example">
+            <h2>:focus</h2>
+            <button>Click and Focus</button>
+            <p>Applies when an element receives focus.</p>
+        </section>
+
+        <section class="example">
+            <h2>:active</h2>
+            <button>Press Me</button>
+            <p>Applies while the element is being clicked.</p>
+        </section>
+
+        <section class="example">
+            <h2>:nth-child()</h2>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+            <p>Selects elements based on their position.</p>
+        </section>
+
+    </main>
+
+</body>
+</html>

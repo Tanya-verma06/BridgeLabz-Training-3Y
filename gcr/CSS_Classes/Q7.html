@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Components</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #dbeafe, #fce7f3);
+        }
+
+        .card {
+            width: 450px;
+            padding: 35px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px gray;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        input,
+        select,
+        button {
+            padding: 13px;
+            border-radius: 7px;
+            border: 1px solid #888;
+            font-size: 16px;
+        }
+
+        input:focus,
+        select:focus {
+            outline: 3px solid lightblue;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+            border: none;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px gray;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .buttons button {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="card">
+
+        <h1>User Interface</h1>
+
+        <input type="search" placeholder="Search here...">
+
+        <select>
+            <option>Select Category</option>
+            <option>Technology</option>
+            <option>Education</option>
+            <option>Travel</option>
+        </select>
+
+        <div class="buttons">
+            <button>Search</button>
+            <button>Clear</button>
+        </div>
+
+    </main>
+
+</body>
+</html>

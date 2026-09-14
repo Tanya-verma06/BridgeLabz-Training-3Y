@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini User Interface</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .card {
+            width: 450px;
+            padding: 30px;
+            background-color: white;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px gray;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            align-self: center;
+            border-radius: 50%;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #aaa;
+            border-radius: 6px;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: 3px solid lightblue;
+            border-color: blue;
+        }
+
+        button {
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: green;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                width: 100%;
+            }
+
+            main {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mini User Interface</h1>
+    </header>
+
+    <main>
+
+        <section class="card">
+
+            <img src="https://picsum.photos/200" alt="Profile Image">
+
+            <h2>Contact Us</h2>
+
+            <form>
+
+                <input type="text" placeholder="Enter your name">
+
+                <br><br>
+
+                <input type="email" placeholder="Enter your email">
+
+                <br><br>
+
+                <textarea rows="5" placeholder="Enter your message"></textarea>
+
+                <br><br>
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mini User Interface</p>
+    </footer>
+
+</body>
+</html>

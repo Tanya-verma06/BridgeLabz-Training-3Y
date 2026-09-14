@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tooltips</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #eeeeee;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .tooltip-box {
+            position: relative;
+            padding: 20px 30px;
+            background-color: #333;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .tooltip {
+            position: absolute;
+            bottom: 120%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+            pointer-events: none;
+        }
+
+        .tooltip-box:hover .tooltip {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="tooltip-box">
+            Home
+            <span class="tooltip">Go to Home</span>
+        </div>
+
+        <div class="tooltip-box">
+            Profile
+            <span class="tooltip">View Profile</span>
+        </div>
+
+        <div class="tooltip-box">
+            Settings
+            <span class="tooltip">Open Settings</span>
+        </div>
+
+        <div class="tooltip-box">
+            Help
+            <span class="tooltip">Get Help</span>
+        </div>
+
+    </main>
+
+</body>
+</html>

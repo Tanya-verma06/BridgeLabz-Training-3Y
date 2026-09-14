@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .highlight {
+            color: blue;
+            font-weight: bold;
+        }
+
+        #special {
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border: 2px solid blue;
+        }
+
+        .container > p {
+            color: green;
+        }
+
+        h2 + p {
+            font-weight: bold;
+        }
+
+        h2 ~ p {
+            margin-left: 20px;
+        }
+
+        .container p {
+            padding: 5px;
+        }
+
+        li {
+            margin: 8px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 20px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CSS Selectors Practice</h1>
+    </header>
+
+    <main>
+
+        <section class="container">
+
+            <h2>Different Selectors</h2>
+
+            <p>This paragraph uses an element selector.</p>
+
+            <p class="highlight">
+                This paragraph uses a class selector.
+            </p>
+
+            <p id="special">
+                This paragraph uses an ID selector.
+            </p>
+
+            <input type="text" placeholder="Attribute selector">
+
+            <p>
+                This paragraph demonstrates the descendant selector.
+            </p>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Flexbox</li>
+            </ul>
+
+            <a href="#">Example Link</a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>CSS Selectors Practice</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing Comparison</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #eeeeee;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .box {
+            width: 300px;
+            padding: 40px;
+            border: 10px solid black;
+        }
+
+        .default {
+            background-color: lightblue;
+        }
+
+        .border-box {
+            box-sizing: border-box;
+            background-color: lightgreen;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .box {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section>
+            <h2>Default Box Sizing</h2>
+
+            <div class="box default">
+                <p>
+                    The default box-sizing is content-box.
+                    Padding and border are added to the width.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Border Box</h2>
+
+            <div class="box border-box">
+                <p>
+                    With border-box, padding and border are
+                    included inside the specified width.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

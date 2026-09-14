@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #eeeeee;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation: move 2s ease-in-out infinite alternate;
+        }
+
+        .ball {
+            width: 70px;
+            height: 70px;
+            background-color: red;
+            border-radius: 50%;
+            animation: bounce 1.5s ease-in-out infinite;
+            animation-delay: 0.3s;
+        }
+
+        .text {
+            font-size: 30px;
+            font-weight: bold;
+            animation: colorChange 2s ease-in-out infinite alternate;
+            animation-direction: alternate;
+        }
+
+        @keyframes move {
+            from {
+                transform: translateX(-50px);
+            }
+
+            to {
+                transform: translateX(50px);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-80px);
+            }
+        }
+
+        @keyframes colorChange {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="box"></div>
+
+        <div class="ball"></div>
+
+        <div class="text">CSS Animation</div>
+
+    </main>
+
+</body>
+</html>
