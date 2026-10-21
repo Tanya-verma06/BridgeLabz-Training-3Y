@@ -1,0 +1,28 @@
+body {
+font-family: Arial, sans-serif;
+}
+
+.tracker-header {
+background: linear-gradient(135deg, #123456, #2563eb);
+}
+
+.list-group-item {
+border-color: #e2e8f0;
+transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+background-color: #eff6ff;
+}
+
+.list-group-item h3 {
+color: #1e293b;
+}
+
+.btn-success {
+transition: transform 0.3s ease;
+}
+
+.btn-success:hover {
+transform: translateY(-3px);
+}

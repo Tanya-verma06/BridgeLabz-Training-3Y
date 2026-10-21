@@ -1,0 +1,28 @@
+body {
+font-family: Arial, sans-serif;
+background: #f8fafc;
+}
+
+.blog-header {
+background: linear-gradient(135deg, #dbeafe, #eff6ff);
+}
+
+.blog-img {
+height: 230px;
+object-fit: cover;
+}
+
+.card {
+border: none;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.card:hover {
+box-shadow: 0 8px 20px #ddd !important;
+}
+
+.page-item.active .page-link {
+background-color: #0d6efd;
+border-color: #0d6efd;
+}

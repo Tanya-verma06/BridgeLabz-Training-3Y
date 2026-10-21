@@ -1,0 +1,17 @@
+body {
+font-family: Arial, sans-serif;
+}
+
+.hero {
+background: linear-gradient(135deg, #eef5ff, #ffffff);
+}
+
+.service-card {
+border: none;
+box-shadow: 0 4px 12px #ddd;
+transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+transform: translateY(-5px);
+}

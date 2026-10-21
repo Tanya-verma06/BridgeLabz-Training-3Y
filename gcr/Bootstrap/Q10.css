@@ -1,0 +1,57 @@
+body {
+font-family: Arial, sans-serif;
+background: #f8fafc;
+color: #1f2937;
+}
+
+.hero {
+background: linear-gradient(135deg, #075985, #2563eb);
+}
+
+.destination-img {
+height: 450px;
+object-fit: cover;
+}
+
+.carousel-caption {
+background: rgba(0, 0, 0, 0.55);
+border-radius: 10px;
+padding: 15px;
+}
+
+.booking-box {
+background: white;
+border: 1px solid #e5e7eb;
+}
+
+@media (max-width: 768px) {
+.destination-img {
+height: 340px;
+}
+
+
+.carousel-caption {
+    padding: 8px;
+}
+
+.carousel-caption h3 {
+    font-size: 1.1rem;
+}
+
+.carousel-caption p {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+}
+
+@media (max-width: 576px) {
+.destination-img {
+height: 270px;
+}
+
+.hero h1 {
+    font-size: 2rem;
+}
+
+}

@@ -1,0 +1,52 @@
+:root {
+--bs-primary: #725ac1;
+--bs-font-sans-serif: 'Poppins', sans-serif;
+}
+
+body {
+font-family: var(--bs-font-sans-serif);
+background: #fcfbff;
+}
+
+.blog-hero {
+background: linear-gradient(135deg, #eee7ff, #fff1f5);
+}
+
+.navbar-brand {
+color: var(--bs-primary);
+}
+
+.blog-img {
+height: 240px;
+object-fit: cover;
+}
+
+.blog-card {
+border: none;
+box-shadow: 0 4px 15px #ddd;
+transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+transform: translateY(-5px);
+}
+
+.badge {
+background: #e8e0ff;
+color: #50358c;
+}
+
+.btn-theme {
+background: var(--bs-primary);
+color: white;
+}
+
+.btn-theme:hover {
+background: #50358c;
+color: white;
+}
+
+.blog-footer {
+background: #27233a;
+color: white;
+}
